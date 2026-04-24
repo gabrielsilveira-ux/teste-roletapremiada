@@ -50,21 +50,21 @@
       gap: 0;
     }
 
-    .hero-logo-slot {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 18px;
-    }
-    .festival-logo {
-      width: min(320px, 78vw);
-      height: auto;
-      object-fit: contain;
+    .brand-row {
+       display: flex;
+        gap: 20px;
+       align-items: center;
+        justify-content: center;
     }
 
+    .brand-row img {
+       height: 40px; /* controla o tamanho */
+      width: auto;
+       object-fit: contain;
+    }
     .badge {
       display: inline-flex; align-items: center; gap: 8px;
-      background: rgba(255,109,53,0.15);
+      background: rgba(255, 109, 53, 0.15);
       border: 1px solid rgba(255,109,53,0.4);
       border-radius: 999px;
       padding: 8px 20px;
@@ -374,7 +374,7 @@
     /* ── ROLETA SECTION ── */
     .roleta-section {
       padding: 80px 24px 100px;
-      max-width: 860px;
+      max-width: 1280px;
       margin: 0 auto;
       text-align: center;
     }
@@ -385,6 +385,7 @@
       padding: clamp(32px, 6vw, 56px);
       position: relative;
       overflow: hidden;
+      width: 100%
     }
     .roleta-wrapper::before {
       content: '';
@@ -416,10 +417,15 @@
       padding: 8px;
       min-height: 920px;
       overflow: hidden;
+      width: 100%
     }
     .widget-frame {
       width: 100%;
+      maax-width: 100%;
+       border: none;
+       border-radius: 12px;
       height: 900px;
+      display: block;
     }
 
     .steps-actions {
@@ -457,23 +463,6 @@
       color: var(--muted);
       font-size: 0.8rem;
     }
-    .footer-logos {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 14px;
-      margin-bottom: 14px;
-      flex-wrap: wrap;
-    }
-    .footer-logo {
-      width: 48px;
-      height: 48px;
-      object-fit: contain;
-      border-radius: 10px;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.12);
-      padding: 6px;
-    }
 
     /* ── RESPONSIVE ── */
     @media (max-width: 600px) {
@@ -482,7 +471,6 @@
       .steps-grid { grid-template-columns: 1fr; }
       .widget-shell { min-height: 1120px; padding: 6px; }
       .widget-frame { height: 1100px; }
-      .hero-logo-slot { margin-bottom: 14px; }
-      .footer-logo { width: 44px; height: 44px; }
+      .brand-row { margin-bottom: 14px; }
     }
   
