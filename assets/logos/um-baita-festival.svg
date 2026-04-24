@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" role="img" aria-label="Um Baita Festival">
+  <rect width="120" height="120" rx="24" fill="#3F2D96"/>
+  <circle cx="60" cy="60" r="40" fill="#FF3F78"/>
+  <text x="60" y="69" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#F3B33F">UB</text>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" role="img" aria-label="Oceania">
+  <rect width="120" height="120" rx="24" fill="#251C63"/>
+  <path d="M20 78 C35 48, 50 48, 60 78 C70 50, 88 50, 100 78" stroke="#F3B33F" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <text x="60" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#F9F4FF">OCE</text>
+</svg>
