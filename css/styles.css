@@ -50,30 +50,15 @@
       gap: 0;
     }
 
-    .brand-row {
+    .hero-logo-slot {
       display: flex;
-      gap: 12px;
       align-items: center;
       justify-content: center;
-      flex-wrap: wrap;
       margin-bottom: 18px;
     }
-    .brand-chip {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.14);
-      font-weight: 700;
-      font-size: 0.82rem;
-      color: var(--text);
-    }
-    .brand-chip img {
-      width: 20px;
-      height: 20px;
+    .festival-logo {
+      width: min(320px, 78vw);
+      height: auto;
       object-fit: contain;
     }
 
@@ -472,6 +457,23 @@
       color: var(--muted);
       font-size: 0.8rem;
     }
+    .footer-logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+    .footer-logo {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      padding: 6px;
+    }
 
     /* ── RESPONSIVE ── */
     @media (max-width: 600px) {
@@ -480,6 +482,7 @@
       .steps-grid { grid-template-columns: 1fr; }
       .widget-shell { min-height: 1120px; padding: 6px; }
       .widget-frame { height: 1100px; }
-      .brand-row { margin-bottom: 14px; }
+      .hero-logo-slot { margin-bottom: 14px; }
+      .footer-logo { width: 44px; height: 44px; }
     }
   
