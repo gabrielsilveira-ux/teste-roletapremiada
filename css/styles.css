@@ -30,8 +30,8 @@
       animation: drift 18s ease-in-out infinite alternate;
     }
     .blob-1 { width: 600px; height: 600px; background: #56359d; top: -200px; left: -200px; animation-delay: 0s; }
-    .blob-2 { width: 500px; height: 500px; background: #56359d; bottom: -150px; right: -150px; animation-delay: -6s; }
-    .blob-3 { width: 400px; height: 400px; background: #56359d; top: 40%; left: 40%; animation-delay: -12s; }
+    .blob-2 { width: 500px; height: 500px; background: #8151e9; bottom: -150px; right: -150px; animation-delay: -6s; }
+    .blob-3 { width: 400px; height: 400px; background: #331a69; top: 40%; left: 40%; animation-delay: -12s; }
 
     @keyframes drift {
       from { transform: translate(0, 0) scale(1); }
