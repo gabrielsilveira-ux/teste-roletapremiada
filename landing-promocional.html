@@ -403,6 +403,16 @@
     .embed-container { min-height: 420px; }
     .embed-container iframe, .embed-container > * { max-width: 100%; }
 
+
+    .widget-shell {
+      background: var(--surface);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 10px;
+      min-height: 420px;
+      overflow: hidden;
+    }
+
     /* ── FOOTER ── */
     footer {
       padding: 32px 24px;
@@ -489,145 +499,42 @@
     </div>
   </section>
 
-  <!-- ── FORM SECTION ── -->
+  <!-- ── PARTICIPAR SECTION ── -->
   <section class="form-section" id="participar">
     <div class="form-card">
-
-      <div id="form-content">
-        <div class="form-header">
-          <span class="emoji">🎯</span>
-          <h2>Garanta sua Vaga</h2>
-          <p>Siga nosso Instagram e preencha os dados abaixo para liberar a roleta.</p>
-        </div>
-
-        <!-- Instagram step -->
-        <div class="ig-step">
-          <div class="ig-logo">
-            <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-            </svg>
-          </div>
-          <div class="ig-step-text">
-            <strong>Passo 1 — Siga no Instagram</strong>
-            <span>Obrigatório para participar do sorteio</span>
-          </div>
-          <a href="https://www.instagram.com/" target="_blank" class="ig-btn" id="ig-follow-btn" onclick="markFollowed()">
-            Seguir
-            <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-          </a>
-        </div>
-
-        <!-- Confirm followed -->
-        <div class="confirm-row">
-          <input type="checkbox" class="custom-checkbox" id="followed-check" onchange="toggleSubmit()" />
-          <label for="followed-check">
-            Confirmo que já segui o perfil no Instagram e aceito os <a href="#">Termos e Condições</a> desta promoção.
-          </label>
-        </div>
-
-        <div class="form-divider">Passo 2 — Seus Dados</div>
-
-        <!-- Fields -->
-        <div class="form-group">
-          <label for="nome">Nome Completo</label>
-          <input type="text" id="nome" placeholder="Digite seu nome completo" required />
-        </div>
-        <div class="form-group">
-          <label for="email">E-mail</label>
-          <input type="email" id="email" placeholder="seu@email.com" required />
-        </div>
-        <div class="form-group">
-          <label for="whatsapp">WhatsApp</label>
-          <input type="tel" id="whatsapp" placeholder="(11) 99999-9999" />
-        </div>
-        <div class="form-group">
-          <label for="instagram">Seu @Instagram</label>
-          <input type="text" id="instagram" placeholder="@seuperfil" required />
-        </div>
-
-        <button class="btn-submit" id="submit-btn" onclick="handleSubmit()" disabled>
-          🎡 Liberar Minha Roleta
-        </button>
-
-        <p class="privacy-note">🔒 Seus dados são protegidos e não serão compartilhados com terceiros.</p>
+      <div class="form-header">
+        <span class="emoji">🎯</span>
+        <h2>Participe Agora</h2>
+        <p>Preencha o formulário oficial da promoção dentro da roleta para registrar sua participação e seu prêmio no App-Sorteos.</p>
       </div>
 
-      <!-- Success state -->
-      <div class="success-state" id="success-state">
-        <span class="trophy">🏆</span>
-        <h3>Tá na Promoção!</h3>
-        <p>Incrível! Você está participando. Agora role a página para baixo e gire a roleta para descobrir seu prêmio!</p>
-        <a href="#roleta" class="btn-primary" style="display:inline-flex">
-          Ir para a Roleta
-          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
+      <div class="form-divider">Cadastro oficial + roleta</div>
+
+      <div class="widget-shell" id="widget-shell">
+        <div data-as-widget="MNyNdp7v" data-as-app="fortune-wheel" style="width:100%;height:750px;"></div>
       </div>
 
+      <p class="privacy-note">🔒 O cadastro e o registro de prêmio são processados pela plataforma App-Sorteos.</p>
     </div>
   </section>
 
   <!-- ── ROLETA SECTION ── -->
   <section class="roleta-section" id="roleta">
-    <p class="section-label">É a sua vez</p>
-    <h2 class="section-title" style="margin-bottom:40px">Gire a <span style="color:var(--gold)">Roleta</span></h2>
-    <div class="roleta-wrapper">
-
-      <!-- Locked overlay -->
-      <div class="roleta-locked" id="roleta-locked">
-        <span class="lock-icon">🔒</span>
-        <p><strong>Roleta bloqueada</strong><br>Preencha o formulário acima para liberar a roleta e girar!</p>
-      </div>
-
-      <!-- Embed -->
-      <div class="embed-container" id="roleta-embed">
-        <script type="text/javascript" src="https://app-sorteos.com/embed/embed.js" data-promotion="MNyNdp7v" async></script>
-      </div>
-
-    </div>
+    <p class="section-label">Plataforma oficial</p>
+    <h2 class="section-title" style="margin-bottom:20px">Sua participação acontece no <span style="color:var(--gold)">App-Sorteos</span></h2>
+    <p style="color:var(--muted);max-width:680px;margin:0 auto 24px;line-height:1.6;">
+      Use o formulário oficial acima para liberar a roleta e garantir que seu prêmio fique registrado corretamente na plataforma.
+    </p>
   </section>
 
   <footer>
-    <p>© 2025 · Promoção válida por tempo limitado · Dúvidas? Fale via Instagram</p>
+    <p>© 2026 · Promoção válida por tempo limitado · Dúvidas? Fale via Instagram</p>
   </footer>
 
 </div>
 
-<script>
-  let followed = false;
+<script src="https://app-sorteos.com/embed/embed.js" data-promotion="MNyNdp7v"></script>
 
-  function markFollowed() {
-    // Called when user clicks the follow button
-    setTimeout(() => {
-      // We trust the checkbox confirmation, not auto-marking
-    }, 500);
-  }
-
-  function toggleSubmit() {
-    const checked = document.getElementById('followed-check').checked;
-    document.getElementById('submit-btn').disabled = !checked;
-  }
-
-  function handleSubmit() {
-    const nome = document.getElementById('nome').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const instagram = document.getElementById('instagram').value.trim();
-
-    if (!nome || !email || !instagram) {
-      alert('Por favor, preencha todos os campos obrigatórios.');
-      return;
-    }
-
-    // Show success
-    document.getElementById('form-content').style.display = 'none';
-    document.getElementById('success-state').style.display = 'block';
-
-    // Unlock roleta
-    document.getElementById('roleta-locked').style.opacity = '0';
-    setTimeout(() => {
-      document.getElementById('roleta-locked').style.display = 'none';
-    }, 400);
-  }
-</script>
 
 </body>
 </html>
