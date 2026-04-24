@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gire a Roleta & Ganhe!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+</head>
+<body>
+
+<div class="blobs">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+</div>
+
+<div class="wrapper">
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="brand-row">
+      <span class="brand-chip">
+        <img src="assets/logos/um-baita-festival.png" alt="Um Baita Festival" />
+        Um Baita Festival
+      </span>
+      <span class="brand-chip">
+        <img src="assets/logos/oceania.png" alt="Oceania" />
+        Oceania
+      </span>
+    </div>
+    <div class="badge">
+      <span class="dot"></span>
+      Promoção Limitada
+    </div>
+    <h1 class="hero-title">
+      <span class="line-gold">GIRE A</span><br>
+      <span class="line-grad">ROLETA</span><br>
+      <span>&amp; GANHE!</span>
+    </h1>
+    <p class="hero-sub">
+      Siga nosso Instagram, preencha o formulário e tente a sorte na roleta. 
+      Prêmios incríveis esperando por você! 🎁
+    </p>
+    <div class="hero-cta">
+      <a href="#como-funciona" class="btn-primary">
+        Quero Participar
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div class="scroll-hint">
+      <span>Como funciona</span>
+      <svg class="arrow" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </div>
+  </section>
+
+  <!-- ── STEPS ── -->
+  <section class="steps-section" id="como-funciona">
+    <p class="section-label">Passo a passo</p>
+    <h2 class="section-title">Como Participar</h2>
+    <div class="steps-grid">
+      <div class="step-card">
+        <span class="step-num">01</span>
+        <div class="step-icon">📱</div>
+        <h3>Siga no Instagram</h3>
+        <p>Acesse nosso perfil e clique em "Seguir" para se qualificar para o sorteio.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-num">02</span>
+        <div class="step-icon">📝</div>
+        <h3>Preencha o Formulário</h3>
+        <p>Insira seus dados para confirmarmos sua participação na promoção.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-num">03</span>
+        <div class="step-icon">🎡</div>
+        <h3>Gire a Roleta</h3>
+        <p>Com tudo confirmado, gire a roleta e descubra seu prêmio na hora!</p>
+      </div>
+      <div class="step-card">
+        <span class="step-num">04</span>
+        <div class="step-icon">🏆</div>
+        <h3>Receba seu Prêmio</h3>
+        <p>Entre em contato e retire seu prêmio. Boa sorte!</p>
+      </div>
+    </div>
+    <div class="steps-actions">
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+        Seguir no Instagram
+      </a>
+      <a href="#participar" class="btn-primary">
+        Já segui, ir para formulário e roleta
+      </a>
+    </div>
+  </section>
+
+  <!-- ── PARTICIPAR SECTION ── -->
+  <section class="form-section" id="participar">
+    <div class="form-card">
+      <div class="form-header">
+        <span class="emoji">🎯</span>
+        <h2>Participe Agora</h2>
+        <p>Preencha o formulário oficial da promoção dentro da roleta para registrar sua participação e seu prêmio no App-Sorteos.</p>
+      </div>
+
+      <div class="form-divider">Cadastro oficial + roleta</div>
+
+      <div class="widget-shell" id="widget-shell">
+        <div class="widget-frame" data-as-widget="MNyNdp7v" data-as-app="fortune-wheel"></div>
+      </div>
+
+      <p class="privacy-note">🔒 O cadastro e o registro de prêmio são processados pela plataforma App-Sorteos.</p>
+    </div>
+  </section>
+
+  <!-- ── ROLETA SECTION ── -->
+  <section class="roleta-section" id="roleta">
+    <p class="section-label">Plataforma oficial</p>
+    <h2 class="section-title" style="margin-bottom:20px">Sua participação acontece no <span style="color:var(--gold)">App-Sorteos</span></h2>
+    <p style="color:var(--muted);max-width:680px;margin:0 auto 24px;line-height:1.6;">
+      Use o formulário oficial acima para liberar a roleta e garantir que seu prêmio fique registrado corretamente na plataforma.
+    </p>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> · Promoção válida por tempo limitado · Dúvidas? Fale via Instagram</p>
+  </footer>
+
+</div>
+
+<script src="js/main.js"></script>
+<script src="https://app-sorteos.com/embed/embed.js" data-promotion="MNyNdp7v"></script>
+
+
+</body>
+</html>
