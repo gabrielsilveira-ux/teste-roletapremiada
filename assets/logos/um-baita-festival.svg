@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000" role="img" aria-label="Um Baita Festival">
+  <rect width="1000" height="1000" fill="#dedede"/>
+  <g transform="translate(70 120)">
+    <text x="420" y="220" font-family="Impact, 'Arial Black', sans-serif" font-size="180" font-weight="900" fill="#3F2D96">UM</text>
+    <polygon points="705,155 730,210 790,215 742,250 758,308 705,276 652,308 668,250 620,215 680,210" fill="#FF3F78"/>
+    <text x="0" y="470" font-family="Impact, 'Arial Black', sans-serif" font-size="250" font-weight="900" fill="#F3B33F" stroke="#3F2D96" stroke-width="14">BAITA</text>
+    <text x="0" y="665" font-family="Impact, 'Arial Black', sans-serif" font-size="230" font-weight="900" fill="#3F2D96">FESTIVAL</text>
+  </g>
+</svg>
